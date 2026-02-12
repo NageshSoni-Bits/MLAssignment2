@@ -40,7 +40,7 @@ def load_models():
     return models, scaler, feature_columns
 
 
-models, scaler = load_models()
+models, scaler, feature_columns = load_models()
 
 # ---------------------------------------------------
 # File Upload
