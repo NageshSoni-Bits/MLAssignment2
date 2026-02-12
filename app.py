@@ -37,7 +37,7 @@ def load_models():
     }
     scaler = joblib.load("model/scaler.pkl")
     feature_columns = joblib.load("model/feature_columns.pkl")
-    return models, scaler
+    return models, scaler, feature_columns
 
 
 models, scaler = load_models()
