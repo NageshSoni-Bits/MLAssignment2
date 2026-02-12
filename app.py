@@ -25,7 +25,6 @@ st.write("Predict whether a customer will subscribe to a term deposit.")
 # ---------------------------------------------------
 # Load Models
 # ---------------------------------------------------
-@st.cache_resource
 def load_models():
     models = {
         "Logistic Regression": joblib.load("model/logistic_regression.pkl"),
