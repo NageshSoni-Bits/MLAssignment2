@@ -36,6 +36,7 @@ def load_models():
         "XGBoost": joblib.load("model/xgboost.pkl"),
     }
     scaler = joblib.load("model/scaler.pkl")
+    feature_columns = joblib.load("model/feature_columns.pkl")
     return models, scaler
 
 
@@ -66,7 +67,7 @@ if uploaded_file is not None:
 
         X = data.drop("deposit", axis=1)
         y = data["deposit"]
-
+        X = X.reindex(columns=feature_columns, fill_value=0)
         # Scale features
         X = scaler.transform(X)
 
