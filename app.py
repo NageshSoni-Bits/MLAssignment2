@@ -42,6 +42,18 @@ def load_models():
 models, scaler, feature_columns = load_models()
 
 # ---------------------------------------------------
+# Download File
+# ---------------------------------------------------
+
+# Download button
+st.download_button(
+    label="Download Predictions as CSV",
+    data=csv,
+    file_name="model/bank.csv",
+    mime="text/csv",
+)
+
+# ---------------------------------------------------
 # File Upload
 # ---------------------------------------------------
 st.sidebar.header("Upload Test Dataset")
