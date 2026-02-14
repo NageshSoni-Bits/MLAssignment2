@@ -47,7 +47,7 @@ models, scaler, feature_columns = load_models()
 
 # Download button
 with open("model/bank.csv", "rb") as f:
-    st.download_button(
+    st.sidebar.download_button(
         label="Download Bank CSV",
         data=f,
         file_name="bank.csv",
