@@ -45,6 +45,7 @@ models, scaler, feature_columns = load_models()
 # Download File
 # ---------------------------------------------------
 
+st.sidebar.header("Download Bank CSV Dataset")
 # Download button
 with open("model/bank.csv", "rb") as f:
     st.sidebar.download_button(
