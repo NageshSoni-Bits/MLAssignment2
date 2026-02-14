@@ -46,12 +46,13 @@ models, scaler, feature_columns = load_models()
 # ---------------------------------------------------
 
 # Download button
-st.download_button(
-    label="Download Predictions as CSV",
-    data=csv,
-    file_name="model/bank.csv",
-    mime="text/csv",
-)
+with open("model/bank.csv", "rb") as f:
+    st.download_button(
+        label="Download Bank CSV",
+        data=f,
+        file_name="bank.csv",
+        mime="text/csv"
+    )
 
 # ---------------------------------------------------
 # File Upload
