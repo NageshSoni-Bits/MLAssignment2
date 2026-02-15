@@ -8,7 +8,7 @@ The objective of this dataset is to predict whether a bank customer has opted fo
 
 ## Model Performance Comparison
 
-| ML Model Name        | Accuracy | AUC      | Precision | Recall   | F1 Score | MCC      |
+| ML Model Name        | Accuracy | AUC      | Precision | Recall   | F1       | MCC      |
 |----------------------|----------|----------|-----------|----------|----------|----------|
 | Logistic Regression  | 0.828377 | 0.906653 | 0.831108  | 0.800303 | 0.815414 | 0.655568 |
 | Decision Tree        | 0.796489 | 0.795468 | 0.790447  | 0.776097 | 0.783206 | 0.591562 |
